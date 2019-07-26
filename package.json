@@ -14,6 +14,6 @@
     "build:data-blog": "yarn workspace @talves/gatsby-theme-cms-data-blog build",
     "build:data-site": "yarn workspace @talves/gatsby-theme-cms-data-site build",
     "build:theme": "yarn workspace @talves/gatsby-theme-cms build",
-    "build": "npm run build:data-blog && npm run build:theme"
+    "build": "npm run build:data-site &&npm run build:data-blog && npm run build:theme"
   }
 }
