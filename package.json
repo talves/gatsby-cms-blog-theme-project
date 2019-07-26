@@ -1,0 +1,19 @@
+{
+  "name": "just-demo",
+  "private": true,
+  "workspaces": [
+    "demo",
+    "packages/@talves/*"
+  ],
+  "scripts": {
+    "demo": "yarn workspace demo develop",
+    "start": "yarn workspace demo start",
+    "watch:data-blog": "yarn workspace @talves/gatsby-theme-cms-data-blog watch",
+    "watch:data-site": "yarn workspace @talves/gatsby-theme-cms-data-site watch",
+    "watch:theme": "yarn workspace @talves/gatsby-theme-cms watch",
+    "build:data-blog": "yarn workspace @talves/gatsby-theme-cms-data-blog build",
+    "build:data-site": "yarn workspace @talves/gatsby-theme-cms-data-site build",
+    "build:theme": "yarn workspace @talves/gatsby-theme-cms build",
+    "build": "npm run build:data-blog && npm run build:theme"
+  }
+}

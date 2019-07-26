@@ -1,0 +1,37 @@
+{
+  "name": "@talves/gatsby-theme-cms-data-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tony Alves (https://www.3alves.com/)",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  },
+  "files": [
+    "*.js",
+    "cms/**/*",
+    "content/**/*",
+    "README.md",
+    "netlify.toml"
+  ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme"
+  ],
+  "dependencies": {
+    "gatsby-source-filesystem": "^2.1.4",
+    "gatsby-source-netlify-cms": "^0.8.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "babel-preset-gatsby-package": "^0.2.2",
+    "cross-env": "^5.1.4",
+    "gatsby": "^2.13.11"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.11"
+  }
+}

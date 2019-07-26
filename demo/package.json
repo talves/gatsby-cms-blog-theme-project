@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tony Alves <tony@3alves.com> (https://www.3alves.com/)",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby clean && gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "build:config": "webpack src/components/cms/config/index.js -o config.js",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.11",
+    "@talves/gatsby-theme-cms": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "3.3.5"
+  }
+}
