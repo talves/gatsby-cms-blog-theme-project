@@ -1,5 +1,5 @@
 {
-  "name": "just-demo",
+  "name": "gatsby-cms-blog-theme-project",
   "private": true,
   "workspaces": [
     "demo",
