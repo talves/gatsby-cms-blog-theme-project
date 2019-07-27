@@ -14,9 +14,6 @@
   "dependencies": {
     "@talves/gatsby-theme-cms": "*",
     "gatsby": "^2.13.11",
-    "gatsby-plugin-netlify-cms": "^4.1.6",
-    "netlify-cms-app": "^2.9.6",
-    "netlify-cms-backend-fs": "^0.4.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },

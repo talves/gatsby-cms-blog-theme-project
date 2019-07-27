@@ -24,15 +24,15 @@ exports.onPreBootstrap = (props, options) => {
       ...blogCollections,
     ]
   }
-  const programDir = `${path.resolve(program.directory)}`
+  const baseDir = `${path.resolve(basePath)}`
 
-  const dir = path.join(programDir, `./src/cms`)
+  const dir = path.join(baseDir, `./src/cms`)
   // Write out the config for the build of the cms (src/cms/config.json)
   if (!fs.existsSync(dir)) mkdirp.sync(dir)
   const configFilePath = path.join(dir, `config.json`)
   try {
     fs.writeFileSync(configFilePath, JSON.stringify(newConfig, null, 2), { flag: 'w', encoding: 'utf8' })
   } catch (error) {
-    reporter.panic('[@talves/gatsby-theme-cms] Error writing config', error)
+    reporter.panic('[@talves/gatsby-theme-cms-data] Error writing config', error)
   }
 }
