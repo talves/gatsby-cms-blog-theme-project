@@ -10,8 +10,11 @@ const siteCollections = require('@talves/gatsby-theme-cms-data-site').collection
 */
 exports.onPreBootstrap = (props, options) => {
   const { store, reporter } = props
-  const { config = {} } = options
   const { program } = store.getState()
+  const {
+    config = {},
+    basePath = path.resolve(program.directory)
+  } = options
 
   // Combine the base config with passed in config, (overwrites base)
   const newConfig = {
@@ -21,7 +24,9 @@ exports.onPreBootstrap = (props, options) => {
       ...blogCollections,
     ]
   }
-  const dir = path.join(program.directory, `./src/cms`)
+  const programDir = `${path.resolve(program.directory)}`
+
+  const dir = path.join(programDir, `./src/cms`)
   // Write out the config for the build of the cms (src/cms/config.json)
   if (!fs.existsSync(dir)) mkdirp.sync(dir)
   const configFilePath = path.join(dir, `config.json`)
