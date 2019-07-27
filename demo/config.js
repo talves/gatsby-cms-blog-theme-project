@@ -1,7 +1,7 @@
 module.exports = {
   "backend": {
     "name": "github",
-    "repo": "talves/gatsby-cms-blog-theme-site",
+    "repo": "talves/gatsby-cms-blog-theme-project",
     "branch": "master"
   },
   "load_config_file": false,
