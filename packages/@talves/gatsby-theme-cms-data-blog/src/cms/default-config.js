@@ -47,6 +47,7 @@ module.exports = {
       "folder": "content/authors",
       "extension": "json",
       "description": "Author descriptions",
+      "identifier_field": "tag",
       "slug": "{{slug}}",
       "create": true,
       "fields": [
