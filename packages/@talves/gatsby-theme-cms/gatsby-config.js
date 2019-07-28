@@ -1,7 +1,8 @@
 const path = require('path')
 
 module.exports = (options) => {
-  const { config } = options
+  const { config = {} } = options
+
   return {
     plugins: [
       {
