@@ -5,6 +5,7 @@
   "author": "Tony Alves (https://www.3alves.com/)",
   "license": "MIT",
   "scripts": {
+    "start": "gatsby clean && gatsby develop",
     "develop": "gatsby develop"
   },
   "files": [
@@ -20,7 +21,8 @@
     "@talves/gatsby-theme-cms-data": "*",
     "gatsby-plugin-netlify-cms": "^4.1.6",
     "netlify-cms-app": "^2.9.6",
-    "netlify-cms-backend-fs": "^0.4.4"
+    "netlify-cms-backend-fs": "^0.4.4",
+    "react-markdown": "4.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -29,6 +31,8 @@
     "gatsby": "^2.13.11"
   },
   "peerDependencies": {
-    "gatsby": "^2.13.11"
+    "gatsby": "^2.13.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }

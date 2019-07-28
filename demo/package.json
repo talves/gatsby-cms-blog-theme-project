@@ -8,7 +8,6 @@
     "start": "gatsby clean && gatsby develop",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "build:config": "webpack src/components/cms/config/index.js -o config.js",
     "clean": "gatsby clean"
   },
   "dependencies": {
