@@ -1,6 +1,10 @@
 module.exports = ({ config }) => ({
   plugins: [
     {
+      resolve: '@talves/gatsby-theme-cms-data-docs',
+      options: { config }
+    },
+    {
       resolve: '@talves/gatsby-theme-cms-data-blog',
       options: { config }
     },

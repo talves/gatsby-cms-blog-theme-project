@@ -3,19 +3,22 @@
   "private": true,
   "workspaces": [
     "demo",
-    "packages/@talves/*"
+    "packages/@talves/*",
+    "packages/gatsby-source-netlify-cms"
   ],
   "scripts": {
     "demo": "yarn workspace demo develop",
     "start": "yarn workspace demo start",
     "watch:data": "yarn workspace @talves/gatsby-theme-cms-data watch",
     "watch:data-blog": "yarn workspace @talves/gatsby-theme-cms-data-blog watch",
+    "watch:data-docs": "yarn workspace @talves/gatsby-theme-cms-data-docs watch",
     "watch:data-site": "yarn workspace @talves/gatsby-theme-cms-data-site watch",
     "watch:theme": "yarn workspace @talves/gatsby-theme-cms watch",
     "build:data": "yarn workspace @talves/gatsby-theme-cms-data build",
     "build:data-blog": "yarn workspace @talves/gatsby-theme-cms-data-blog build",
+    "build:data-docs": "yarn workspace @talves/gatsby-theme-cms-data-docs build",
     "build:data-site": "yarn workspace @talves/gatsby-theme-cms-data-site build",
     "build:theme": "yarn workspace @talves/gatsby-theme-cms build",
-    "build": "npm run build:data-site && npm run build:data-blog && npm run build:data"
+    "build": "npm run build:data-site && npm run build:data-blog && npm run build:data-docs && npm run build:data"
   }
 }
