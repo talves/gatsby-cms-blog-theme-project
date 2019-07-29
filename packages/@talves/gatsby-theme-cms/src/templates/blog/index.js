@@ -5,12 +5,13 @@ import Extra from "../../components/extra-json";
 
 /*
   Query here allows for shadowing components
+  In this case, you would shadow gatsby-theme-cms/components/blog-list.js
 */
 export const query = graphql`
-  query BlogCollection {
+  query {
     allBlog {
       nodes {
-        ...BlogListSection
+        ...BlogCollection
       }
     }
   }

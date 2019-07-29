@@ -9,7 +9,7 @@ import Extra from '../../components/extra-json'
 export const query = graphql`
 query ($id: String!) {
   blog(id: {eq: $id}) {
-    ...BlogListSection
+    ...BlogCollection
   }
 }
 `

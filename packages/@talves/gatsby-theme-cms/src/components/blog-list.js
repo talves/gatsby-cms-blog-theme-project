@@ -2,7 +2,13 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 
 export const fragment = graphql`
-fragment BlogListSection on Blog {
+fragment BlogCollection on Blog {
+  parent {
+    ... on MarkdownRemark {
+      html
+      excerpt(format: PLAIN, pruneLength: 200)
+    }
+  }
   frontmatter {
     author {
       tag
