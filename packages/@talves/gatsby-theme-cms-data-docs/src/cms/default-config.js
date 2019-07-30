@@ -6,6 +6,7 @@ module.exports = {
       "label_singular": "Entry",
       "description": "The docs entry edited here can be markdown or mdx.\n",
       "extension": "mdx",
+      "format": "frontmatter",
       "folder": "content/docs",
       "slug": "{{year}}-{{month}}-{{day}}-{{slug}}",
       "create": true,

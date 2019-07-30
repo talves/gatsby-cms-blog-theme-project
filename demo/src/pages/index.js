@@ -7,7 +7,7 @@ const Index = (props) => {
       <h1>Collection Types</h1>
 
       <ul>
-        {['blog',].map((item, index) => {
+        {['blog','docs'].map((item, index) => {
           return (<li key={index}><Link to={`/${item}`}><h2>{item}</h2></Link></li>)
         })}
       </ul>

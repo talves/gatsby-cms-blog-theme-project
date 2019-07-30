@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const mkdirp = require('mkdirp')
+const docsCollections = require('@talves/gatsby-theme-cms-data-docs').collections
 const blogCollections = require('@talves/gatsby-theme-cms-data-blog').collections
 const siteCollections = require('@talves/gatsby-theme-cms-data-site').collections
 
@@ -22,6 +23,7 @@ exports.onPreBootstrap = (props, options) => {
     collections: [
       ...siteCollections,
       ...blogCollections,
+      ...docsCollections,
     ]
   }
   const baseDir = `${path.resolve(basePath)}`
