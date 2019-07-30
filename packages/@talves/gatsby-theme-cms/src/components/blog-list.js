@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import Collection from './collection'
 
 export const fragment = graphql`
 fragment BlogCollection on Blog {
@@ -35,18 +36,9 @@ const BlogList = ({ data }) => {
   return (
     <>
       <h2>
-        <Link to="/">Home</Link>
+        <Link to={`/`}>Home</Link>
       </h2>
-      <ul>
-        {data &&
-          data.map(item => {
-            return (
-              <li>
-                <Link to={`/${item.internal.type.toLowerCase()}/${item.name}`}>{item.frontmatter.title}</Link>
-              </li>
-            );
-          })}
-      </ul>
+      <Collection data={data}/>
     </>
   )
 }

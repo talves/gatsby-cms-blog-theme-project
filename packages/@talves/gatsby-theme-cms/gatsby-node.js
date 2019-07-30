@@ -18,9 +18,9 @@ exports.createPages = async (
     const markdownCollections = collections.filter(collection => {
       return (collection.folder &&
           (!collection.extension && !collection.format)
-          || Boolean([undefined, 'md', 'markdown'].indexOf(collection.extension) > 0)
-          || Boolean([undefined, 'md', 'markdown'].indexOf(collection.format) > 0)
-        )
+          || Boolean([undefined, 'md', 'markdown', 'mdx'].indexOf(collection.extension) > 0)
+          || Boolean([undefined, 'frontmatter'].indexOf(collection.format) > 0)
+          )
     })
 
     markdownCollections.forEach(async (collection) => {

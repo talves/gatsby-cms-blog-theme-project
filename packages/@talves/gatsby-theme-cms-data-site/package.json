@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "gatsby-source-filesystem": "^2.1.4",
-    "gatsby-source-netlify-cms": "^0.9.1"
+    "gatsby-source-netlify-cms": "^0.9.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",

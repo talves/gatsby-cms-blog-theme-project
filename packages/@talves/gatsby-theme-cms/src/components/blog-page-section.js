@@ -7,7 +7,7 @@ const BlogPageSection = (data) => {
     <>
     <h1>{data.frontmatter && data.frontmatter.title}</h1>
       <h2>
-        <Link to="/">Home</Link>
+        <Link to={`/${data.internal.type.toLowerCase()}`}>back</Link>
       </h2>
       <Markdown>{data.rawBody}</Markdown>
     </>
