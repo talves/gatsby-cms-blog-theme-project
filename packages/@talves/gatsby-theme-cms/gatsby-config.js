@@ -13,12 +13,14 @@ module.exports = (options) => {
         }
       },
       {
-        resolve: 'gatsby-plugin-netlify-cms',
+        resolve: '@talves/gatsby-plugin-netlify-cms',
         options: {
           modulePath: path.join(__dirname, `./src/cms`),
           manualInit: true, // We will not load a config automatically see src/cms/index.js
+          // buildCMS: false, // Set this to false to skip the build of the CMS
         },
-      }
+      },
+      'gatsby-plugin-theme-ui'
     ]
   }
 }
